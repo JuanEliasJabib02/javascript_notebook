@@ -1,4 +1,5 @@
 
+// A variable is a container for data values
 
 let product = "Iphone";
 
