@@ -9,7 +9,7 @@ const table = (number) => {
         result += `${number} x ${i} = ${number * i} \n`
     }
     
-    return  result
+    return result;
 }
 
 console.log(table(6))
