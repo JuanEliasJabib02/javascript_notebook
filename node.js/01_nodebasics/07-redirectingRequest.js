@@ -21,7 +21,7 @@ const app = http.createServer((req,res) => {
         fs.writeFileSync("message.text", "Learning Node.js");
         res.statusCode = 302;
         res.setHeader("Location", "/node.js");
-        return res.end
+        return res.end();   
     }
     
 
