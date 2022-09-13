@@ -6,7 +6,6 @@ const search = (phrase,word) => {
     const phraseL = phrase.toLowerCase().split(" ")
     const wordL = word.toLowerCase()
 
-
     let counter = 0;
 
     for( let i = 0; i < phraseL.length; i++){
@@ -19,5 +18,5 @@ const search = (phrase,word) => {
     
 }
 
-search("Hola soy la frase Hola Hola Hola", "Hola")
+search("THE DOG IS THE DOG AND DOGGY DOG", "DOG")
 
