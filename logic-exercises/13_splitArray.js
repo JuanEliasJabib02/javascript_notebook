@@ -9,11 +9,22 @@
 
 const splitArray = (array,number) => {
   
-  const newArray = [...array];
+  const result = [];
 
+  for(let element of array) {
     
+    let lastIndex = result[result.length - 1 ]
+    
+    if(!lastIndex || lastIndex.length === number){
+      result.push([element]);
+    } else {
+      lastIndex.push(element);
+    }
+  }
+
+  console.log(result);
 
 }
 
 
-console.log(splitArray([1,2,3,4,5,6],3))
+splitArray([1,2,3,4,5,6],1)
