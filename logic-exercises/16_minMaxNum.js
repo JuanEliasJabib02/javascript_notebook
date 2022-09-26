@@ -6,11 +6,11 @@ const minMaxNum = (arr) =>{
   const max = [];
 
 
-  for(let i = 0; i < arr.length - 1; i++){
+  for(var i = 0; i < arr.length - 1; i++){
     min.push(arr[i])
   }
 
-  for(let j = 1; j < arr.length; j++){
+  for(var j = 1; j < arr.length; j++){
 
     max.push(arr[j])
 
@@ -19,11 +19,11 @@ const minMaxNum = (arr) =>{
   let minSum = 0;
   let maxSum = 0;
 
-  for (const number of min) {
+  for (var number of min) {
     minSum += number
   }
 
-  for (const number of max) {
+  for (var number of max) {
     maxSum += number
   }
 
