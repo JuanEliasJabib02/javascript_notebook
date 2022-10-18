@@ -148,7 +148,7 @@ newBidingBind() // is binding to the object that we select
  * 3. NEW BINDING
  * 
  * Javascript is a language is a multy-paradimic language
- * we cam program with the paradic of OOP or funcional programming
+ * we can program with the paradic of OOP or funcional programming
  * 
  * 
  */

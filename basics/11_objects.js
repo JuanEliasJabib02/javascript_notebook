@@ -8,9 +8,18 @@
 
 // Object literal
 const User = {
+
+    //Properties : Are how look our objects
     name:"Juan Elias",
     email: "juaneliasjabib02@gmail.com",
-    password: "passdificil123"
+    password: "passdificil123",
+
+    //Methods : Are the things that our object can do 
+    login() {
+        console.log(this.name + " is loading")
+    }
+
+
 }
 
 // Acces to objects properties
@@ -24,6 +33,10 @@ User.age = 26;
 // Delete properties to the object
 // delete User.name;
 
+
+// using a method
+
+User.login();
 
  // Destructuring: is a JS expression that makes it possible to unpack values from and array
  // or properties from a object into distinc variables
