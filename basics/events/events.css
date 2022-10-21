@@ -1,0 +1,30 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.main-zone{
+  background-color: rgb(200, 0, 255);
+}
+
+.zone-1{
+  background-color: YELLOW;
+}
+.zone-2{
+  background-color: blue;
+}
+
+.zone-3{
+  background-color: red;
+}
+
+.books {
+  background-color: aqua;
+  padding: 1rem;
+}
+
+.books > ul >li {
+  background-color: green;
+  height: 10rem;
+}

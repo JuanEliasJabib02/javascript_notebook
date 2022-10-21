@@ -1,0 +1,21 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.books{
+  background-color: rgb(200, 0, 255);
+}
+
+.book-1{
+  background-color: YELLOW;
+}
+.book-2{
+  background-color: blue;
+}
+
+.book-3{
+  background-color: red;
+}
+
