@@ -8,8 +8,6 @@
 
 
 
-
-
 /**
  *  What is a polyfill
  * 
