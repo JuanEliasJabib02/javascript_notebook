@@ -23,3 +23,20 @@ console.log(s3);
 console.log(Symbol(42) == Symbol(42));
 console.log(Symbol(42) === Symbol(42));
 
+
+/* Example */
+
+const NAME = Symbol("1");
+
+const user = {
+  /* With [] we declare a unique indentifier using a symbol  */
+  [NAME]:"Juan"
+}
+
+console.log(user[NAME]); // We have to use [] for access to the symbol properties
+
+// The properties that are using symbols are not iterables
+
+for (let i in user) {
+  console.log(i); // output : nothing beucase are not iterables the properties
+}

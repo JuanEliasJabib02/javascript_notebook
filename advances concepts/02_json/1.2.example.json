@@ -1,0 +1,18 @@
+[
+  {
+  "name":"juan",
+  "email":"juaneliasjabib02@gmail.com",
+  "isProgrammer":true,
+  "hobbies":["coding","music"],
+  "dad":{
+    "name":"juan jabib",
+    "favoriteThing":"fincas"
+  }
+  },
+  
+  {
+    "company":"hidehsi",
+    "ceo":null,
+    "rating":4.32
+  }
+]
