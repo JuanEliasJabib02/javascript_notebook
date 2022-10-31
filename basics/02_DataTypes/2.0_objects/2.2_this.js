@@ -1,8 +1,9 @@
 // Keyword this:
 
 /*
- This keyword do reference to the object in current ejecution
+ -This keyword do reference to the object in current ejecution
 and depends of the context  do reference to distints objects
+ -This is all about where a function is invoked.
 
 What is "context" in dev?
 The context is the object in current ejecution in a specific moment
@@ -20,9 +21,18 @@ The context is the object in current ejecution in a specific moment
  * Explicit Biding(Indirect function)
  * New Binding(instantiate objects)
  * Lexical Binding(Arrow functions)
+ * 
  */
 
 /*1.Default Binding */
+
+/* Default binding refers to how this is the global context whenever a function 
+  is invoked without any of these other rules. If we aren't using a dot and we 
+  aren't using call(), apply(), or bind(), our this will be our global object.
+
+  Your global context depends on where you're working. If you're in the browser, 
+  this will be the window. When programming in strict mode, the global context is undefined.
+  */
 
 function globalContext() {
   console.log(`hello im `, this);
@@ -38,7 +48,9 @@ function globalContext() {
 //2.Implicit Biding(Method invocation)
 
 /**
- * when we invocate a method of a object is produced this type of binding
+ * -when we invocate a method of a object is produced this type of binding
+ * -In implicit binding, whatever is to the left of the dot becomes the 
+ *  context for this in the function.
  * EJ:
  */
 
@@ -72,8 +84,8 @@ const pokemon1 = {
 
 /**
  *  The explicit biding help us to select the object that we want that be 
- * "this" when the function is executed
- *
+ * "this" when the function is executed.
+ * 
  */
 
  const goku = {
@@ -95,7 +107,7 @@ const pokemon1 = {
       console.log(gb)
     }
   }
-}
+ }
 /**
  * All functions in javascripts are objects and the objects have properties and methods
  * that we can use 
