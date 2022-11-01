@@ -3,10 +3,19 @@
 /*
  -This keyword do reference to the object in current ejecution
 and depends of the context  do reference to distints objects
- -This is all about where a function is invoked.
 
 What is "context" in dev?
 The context is the object in current ejecution in a specific moment
+
+ -This is all about where a function is invoked. Often,
+early programmers worry about where the function was declared.
+ Perhaps the function was declared in a specific file or a particular object. 
+
+ Surely this changes it's this
+ 
+ To understand this, we need to see where it is invoked.
+Nothing else matters, with one exception which we'll cover in a moment.
+
 */
 
 /**
@@ -39,19 +48,17 @@ function globalContext() {
 }
 
 // A good practice is not use this in global contex
-
-//globalContext();
+globalContext();
 
 // global === objectGlobal(node) === windows(client)
 
 
-//2.Implicit Biding(Method invocation)
 
-/**
- * -when we invocate a method of a object is produced this type of binding
- * -In implicit binding, whatever is to the left of the dot becomes the 
- *  context for this in the function.
- * EJ:
+/** 2. Implicit Binding
+ * 
+ * Implicit binding occurs when dot notation is used to invoke a function.
+ * 
+ * EXAMPLE:
  */
 
 const pokemon1 = {
@@ -68,24 +75,28 @@ const pokemon1 = {
 
   }
 }
-//We we use this type of biding the value of this is always in the left after the .
-//console.log(pokemon1.pokedex())
-            /* Object.method
-                    <-This is the object because is in th left of the . */
-//console.log(pokemon1.pokemon2.pokedex())
 
+console.log(pokemon1.pokedex())
+              /* this is pokemon 1 here */
+console.log(pokemon1.pokemon2.pokedex())
+                  /* This is pokemon2 here */
 
-
-// When we work with the dom events this, by default is the element that init
-
+/**
+ * In implicit binding, whatever is to the left of the dot(.) 
+ * becomes the context for this in the function. 
+ */
 
 
 //3.Explicit Biding
 
 /**
- *  The explicit biding help us to select the object that we want that be 
- * "this" when the function is executed.
+ * Explicit binding of this occurs when .call(), .apply(), or .bind() 
+ * are used on a function.
  * 
+ * We call these explicit because you are explicitly passing in a this context to call() or apply(). 
+ * We’ll talk bind() in just a moment.
+ * 
+Here's how things look:
  */
 
  const goku = {
@@ -109,43 +120,39 @@ const pokemon1 = {
   }
  }
 /**
- * All functions in javascripts are objects and the objects have properties and methods
- * that we can use 
- * 
- * The first method Function.prototype.call()
+ * Function.prototype.call()
  * Call help us to invocate a function changing his context, in less words
  * changint the value of "this"
  */
 
-//goku.sayHi(true, true)
+goku.sayHi(true, true)
 
 const vegeta = {
   name:"vegeta"
 } 
                 /** The first parameter is the new context(the object that go to be this and)
                  * and after the parameters that need the function*/
-//goku.sayHi.call(vegeta, true, true);
+goku.sayHi.call(vegeta, true, true);
 
 /**
- * So We can conclude that the implicit binding appears when we do a indirect invocation
+ * Since we have .call, we must ignore what appears before the dot in our function call.
+ * We are using goku object methods and calling it on another this context: runner.
  */
 
 
-/**
- * The second method is Function.prototype.apply():
- *  this Method is very similar to call() the unique difference is the way in wich we send
- * the parameters, in this method we send the parametrs inside a array
+/** Function.prototype.apply():
+
+.apply() is almost the same, except we must pass in an array of 
+parameters after our this context.
  */
 
+goku.sayHi.apply(vegeta, [true, true]);
 
-//goku.sayHi.apply(vegeta, [true, true]);
 
-
-/**
- * The third method is Function.prototype.bind():
+/** Function.prototype.bind():
  * 
- * is a method of the functions that return a new function with the new context 
- * binding to the object that we select
+ * When called on a function, .bind() sets a this context and returns 
+ * a new function of the same name with a bound this context.
  * 
  * Is difference to apply and call because bind dont execute the function untill
  * we need
@@ -159,29 +166,26 @@ newBidingBind() // is binding to the object that we select
 /**
  * 3. NEW BINDING
  * 
- * Javascript is a language is a multy-paradimic language
- * we can program with the paradic of OOP or funcional programming
+ * When we instantiate objects with "new" occurs
+ * the new binding
  * 
- * 
- */
-
-
+ * Javascript create a new empty object and invocate
+ * the constructor function with the new object
+ * as valor of this and after the object is save 
+ * in the variable
+ */ 
 class User {
   constructor(name) {
     this.name = name
   }
 };
+const Juan = new User("Juan"); // <-- Here occurs a new binding
 
-const Juan = new User("Juan");
-/** We Instantiate objects with new it appears biding ,
- * javascript create a new empty object and invocate the constructor function with
- * the new object as valor of this and after the object is saved in the variable
- */
+
 
 /** 1. Lexican binding 
  *  It is produced when we write the function using arrows functions
 */
-
 const Dante = {
   name: "dante",
   twitter: "@dante",
@@ -213,8 +217,6 @@ console.log(Dante.sayHi())
 
 
 
-
-  
 
 const globalContextArrow = () => {
  // console.log(this)
