@@ -1,20 +1,16 @@
-/* How to Eyeball Your ‘This’ Context in Javascript */
-
 /**
- * 
- * This is all about where a function is invoked. Often, 
- * early programmers worry about where the function was declared. 
- * Perhaps the function was declared in a specific file or a particular object.
- *  Surely this changes it's this!To understand this, we need to see where
- *  it is invoked. Nothing else matters, with one exception which we'll cover in a moment.
- * 
- * First, let’s go through the different ways that this can be assigned in Javascript.
+ * Eyeballing ThisYou'll notice that none of these rules require
+ *  too much work.Is there a dot? Look to the left. That's this.
+ * Do you see .call() or .apply()? What's passed in before the first comma? Thats this.
+ * Does the function stand alone when it's invoked? Then what's your global context? 
+ * That's this.These three rules-of-thumb point to the most important rule of all: 
+ * this refers to a function's callsite (where it is invoked).
+
+.bind() – The Exception
+
+Unfortunately, .bind() complicates matters a bit.
+
+When called on a function, .bind() sets a this context and returns a new function
+ of the same name with a bound this context.
  */
 
-
-/**
- * Implicit Binding
-Implicit binding occurs when dot notation is used to invoke a function.
- */
-
-/* Example */

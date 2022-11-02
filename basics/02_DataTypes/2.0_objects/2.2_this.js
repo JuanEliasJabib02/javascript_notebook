@@ -254,3 +254,6 @@ const object = {
  * If we use this outside a object we refer to the globalObject but
  * if we use this inside a object we refer to the object
  * */ 
+
+
+
