@@ -1,7 +1,8 @@
 /* 
 Whats is a function
 
- -A function is a "subprogram" that can be called by code external or internal to the function
+ - A function is a block of code that do a specific task and can be 
+ re-used 
  -is composed of a sequence of statements called the function body
  */
 
