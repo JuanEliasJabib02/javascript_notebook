@@ -3,7 +3,7 @@
  *    -Mean that the values can't change , the primitive javascript datatypes are
  * inmutables : Strings,Nulls,Booleans,Number,Symbol,Undefined,bigInt
  * Mutable:
- *    -Values can change 
+ *    -Values can change  
  * Javascript datatypes mutables are: Objects
  */
 

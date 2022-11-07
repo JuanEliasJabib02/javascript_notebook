@@ -2,7 +2,7 @@
 /**
  * Scope:
  * The scope is the current context of execution in which values and expressions
- * are visible or canbe referenced, If a variable or expression is not in the
+ * are visible or can be referenced, If a variable or expression is not in the
  * current scope, it will not be available for use.
  * 
  * Javascript has a lexical scope because the scope of every variable is determinated
@@ -32,10 +32,10 @@ const variable = "im  in the global"
  * -Block scope
  */
 
-
 /** 
  * Function Scope:
- *    Are accesible inside the function, but not ouside.
+ * 
+ * Are accesible inside the function, but not ouside.
  * 
  * as a curiosity all the variables declared with var always
  * will has a function scope
@@ -49,7 +49,7 @@ function scopeFunction() {
 /**
  * Block Scope :
  * A blockscope is all portion of code enclosed between {} 
- * and can are accesible inside the block but not ouside
+ * and can be accesible inside the block but not ouside
  */
 
 function blockScope() {
