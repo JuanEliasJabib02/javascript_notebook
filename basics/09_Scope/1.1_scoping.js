@@ -75,7 +75,7 @@ So what is the difference between the global and local scope?
 the difference between the global and local scope are that
 the variables declared with global scope will stay during all
 the program execution and the variables declared with local scope
-only during the executionof the function or block
+only during the execution of the function or block
  */
 
 /**
