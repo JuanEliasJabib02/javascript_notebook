@@ -1,5 +1,5 @@
 /**
- * Class are a template for creating objects.
+ * Class are  template for creating objects.
  * 
  *
  * */

@@ -1,7 +1,7 @@
 // Arrays
 
 /**
- * 
+ * An array is a collection of data, can be primitives or objects.
  */
 
 const Cars = ["Bmw", "Chevrolet camaro", "Toyota", "Mazda 6"]

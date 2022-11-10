@@ -4,7 +4,7 @@
  The first phase es Capture:
 
  In this phase is searching for the element on the dom
- more deep where  was procuded the event.
+ more deep where was procuded the event.
 
 
  The second phase is the target:
@@ -44,7 +44,7 @@ zone_main.addEventListener("click", () => {
  */
 
 zone1.addEventListener("click", (e) => {
-  e.stopPropagation();/* Using the emthod stopPropagtion we can stop the event bubling */
+  e.stopPropagation();/* Using the method stopPropagtion we can stop the event bubling */
   console.log("click on zone 1")
 
 })
@@ -65,5 +65,3 @@ zone3.addEventListener("click", (e) => {
 
 })
 
-
-/* EVENT DELEGATION */

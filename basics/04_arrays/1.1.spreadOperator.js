@@ -1,11 +1,16 @@
 /**
  * 
- * Spread operator
- * Spread syntax (...) allows an iterable, such as an array or string, 
- * to be expanded in places where zero or more arguments
- *  (for function calls) or elements (for array literals) are expected
+ * Spread operator.
+ * It provides you with the ability to expand iterable objects
+ * into multiple elements. What does it really mean? Let’s check some examples.
+ *
+ * 
+ * The most common use is probably combining arrays or copyng arrays
  */
 
+// Example 1:
+const movies = ["Leon", "Love Actually", "Lord of the Rings"];
+console.log(...movies);
 
 
 /* Spread in array literals */
