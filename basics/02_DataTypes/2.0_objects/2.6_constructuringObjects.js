@@ -15,7 +15,7 @@ const obj = {
 }
 
 /**
- * Using a constructor function
+ * Using a function constructor 
  * 
  * Define the object type by writing a constructor function. 
  * There is a strong convention, with good reason, to use a capital initial letter.
