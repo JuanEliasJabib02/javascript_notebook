@@ -1,1 +1,1 @@
-text
+text for example path modules
