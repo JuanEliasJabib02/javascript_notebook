@@ -1,7 +1,7 @@
 /* 
   GLOBAL OBJECT IN NODE.JS - NO WINDOW
 
-  When we work on node.js we dony have access to the windows object
+  When we work on node.js we don't have access to the windows object
   insteed we have acess to the global object that have a lot of
   bunch of useful things.
 

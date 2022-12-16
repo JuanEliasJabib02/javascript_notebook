@@ -20,6 +20,4 @@ to defer the exececution of code for whatever reason to the
 untill the stack is clear */
 
 
-
-
 console.log("second task")

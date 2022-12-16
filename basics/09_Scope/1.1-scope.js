@@ -1,12 +1,21 @@
 "use strict"
-/**
- * Scope:
- * The scope is the current context of execution in which values and expressions
- * are visible or can be referenced, If a variable or expression is not in the
- * current scope, it will not be available for use.
- * 
+
+/* What is the type of scope of javascript?
+    Lexical scope means that scope is defined by author-time decisions of where functions are declared.
+     The lexing phase of compilation is essentially able to know where and how all identifiers are declared,
+   and thus predict how they will be looked-up during execution.
  * Javascript has a lexical scope because the scope of every variable is determinated
  * reading the code of the program, without executing it
+ * 
+ * */
+
+/**
+ *  What is the Scope ?:
+ * 
+  * The scope are the rules that determinate where and how a variable can be found in the current
+  * execution context, if the variable can't be found in the  current scope javascript will keep looking for it
+  * in the next level scope untill reach the global scope and this is known as Nested Scope
+ * 
  * 
  * Exist two types of scope
  * 
@@ -78,6 +87,7 @@ the program execution and the variables declared with local scope
 only during the execution of the function or block
  */
 
+
 /**
  * Scope Chain:
  * 
@@ -91,15 +101,21 @@ only during the execution of the function or block
 let fruit = "banana";
 function eat() {
   let fruit = "apple"
-  function Wash(){
+  function Wash() {
     console.log("washing " + fruit)
-    /* Javascript search from inside to outside how appears first the fruit
-    with apple is used and is produced a variable shadowing */
-    /* What is a variable shadowing 
 
-    Appears when a variable that is in a most reduced scope than other
-    variable that is in a superior scope following the scopechain have the same name
-    */
+    /**
+     * When occurs shadowing??
+     * 
+     * Shadowing occurs when exist two variable with the same name in differents scopes
+     * javascript search from the low level scope of a nested scope to the high level scope
+     * and stop once it finds the first match l
+     * 
+     * In this examples we can see two variables with the same name "fruit" in differents scopes
+     * how javascript is searching from inner to outside  when match with the first fruit with
+     * the value "apple" he stop and take that value.
+     */
+
   };
   Wash();
 
