@@ -2,15 +2,23 @@
 
 /**
  * What is the  the hosting?
+ *  
+ * Is the process whereby functions declarations and variables are moved to the top
+ * of the respectives scopes
+ */
+
+/**
+ * Why happen the hoisting effect?
  * 
- * Is the effect that allow us to use functions and variables before the declration
- 
+ * That happen because javascript engine do two phases , the first phase
+ * is the compile phase and that is that first that occurs, in this phase
+ * is when appears the hoisting effect and the second phase is the execution phase
  */
 
 
 //Example 
 console.log(character) //  2. after the elevation the varaible character already exist 
-                        //This will show us a undefined because the hosting effect
+//This will show us a undefined because the hosting effect
 var character = "Randy"
 //  1. The variable is elevate to the top scope before the execution
 

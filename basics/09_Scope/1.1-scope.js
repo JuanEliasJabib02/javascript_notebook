@@ -23,6 +23,8 @@
  * 
  */
 
+
+
 /**
  * Scope Global :
  *  Are the variables declarated outside of any function or blockcode
@@ -30,7 +32,6 @@
  *  
  */
 const variable = "im  in the global"
-
 
 /**
  * Local Scope :
@@ -44,7 +45,7 @@ const variable = "im  in the global"
 /** 
  * Function Scope:
  * 
- * Are accesible inside the function, but not ouside.
+ * Are the variables accesible inside the function but not outside
  * 
  * as a curiosity all the variables declared with var always
  * will has a function scope
