@@ -1,26 +1,17 @@
 "use strict"
-
-/* What is the type of scope of javascript?
-    Lexical scope means that scope is defined by author-time decisions of where functions are declared.
-     The lexing phase of compilation is essentially able to know where and how all identifiers are declared,
-   and thus predict how they will be looked-up during execution.
- * Javascript has a lexical scope because the scope of every variable is determinated
- * reading the code of the program, without executing it
- * 
- * */
-
 /**
  *  What is the Scope ?:
  * 
-  * The scope are the rules that determinate where and how a variable can be found in the current
-  * execution context, if the variable can't be found in the  current scope javascript will keep looking for it
-  * in the next level scope untill reach the global scope and this is known as Nested Scope
+ * The scope is the current context of execution in which values and expressions are "visibles".
  * 
+ * If a variable or expression is not in the current scope it will no be available for use.
+ *
+ */
+
+/**
+ * Javascript have 2 types of scope
  * 
- * Exist two types of scope
- * 
- * Global Scope and Local Scope
- * 
+ * Global Scope and Local Scope.
  */
 
 
@@ -45,10 +36,9 @@ const variable = "im  in the global"
 /** 
  * Function Scope:
  * 
- * Are the variables accesible inside the function but not outside
+ * The fuction scope are the variables or expression declared inside a function
+ * they are visibles inside but not outside the function
  * 
- * as a curiosity all the variables declared with var always
- * will has a function scope
  */
 
 function scopeFunction() {
@@ -58,8 +48,9 @@ function scopeFunction() {
 
 /**
  * Block Scope :
- * A blockscope is all portion of code enclosed between {} 
- * and can be accesible inside the block but not ouside
+ * 
+ * The block scope are the variables or expression declared inside a  block statement
+ * {}, they are visibles inside the block but not outside him
  */
 
 function blockScope() {
@@ -92,11 +83,8 @@ only during the execution of the function or block
 /**
  * Scope Chain:
  * 
- * Try to understand the hierarchy between the 
- * distint existing scopes  is the key to understand
- * the scopechain
+ Scope can be layered in a hierarchy, so that child scopes have access to his parent scope but not viseversa.
  */
-
 
 
 let fruit = "banana";

@@ -37,6 +37,14 @@ var character = "Randy"
  * 
  */
 
+/* What is the temporal dead zone
+
+A let or const variable is said to be in a "temporal dead zone" (TDZ) 
+from the start of the block until code execution reaches the line where the variable 
+is declared and initialized.
+
+*/
+
 //console.log(goku);
 const goku = "goku";
 

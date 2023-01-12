@@ -15,12 +15,9 @@ const scope = () => {
 
 console.log(cat) // Cat cant be initializate here because was initializate inside the block scope
 
-
-
-
 // typeOf for see the type of data
 
-console.log(typeof(dog)) // is a string
+console.log(typeof (dog)) // is a string
 
 
 
