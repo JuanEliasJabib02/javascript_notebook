@@ -1,20 +1,10 @@
 
-
-
-
-
-
-
-
-
-
 /**
  *  What is a polyfill
  * 
  * A polyfill is a piece of code used to provide modern functionality on olders
  * browsers that do not natively support it
  */
-
 
 /* Imagine if the method .map of the arrays dont exist and we
 have to create our own method similar to "map"
@@ -36,6 +26,6 @@ Array.prototype.customMap = function (callback) {
 
 let array = [1, 2, 3];
 
-array.customMap(element => console.log(element * 2) )
+array.customMap(element => console.log(element * 2))
 
 
