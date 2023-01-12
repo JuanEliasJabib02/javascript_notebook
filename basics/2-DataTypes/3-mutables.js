@@ -6,8 +6,6 @@
  *    -Values can change  
  * Javascript datatypes mutables are: Objects
  */
-
-
 let Object = {
 
   propertie1: "value1",
