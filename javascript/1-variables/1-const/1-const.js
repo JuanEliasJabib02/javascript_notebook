@@ -1,15 +1,14 @@
 
-// const has to be initializate with a value
+// A 'const' has to be initialized with a value.
 const dog = "Dante";
 
 console.log(dog)
 
-dog = "Messi"  // const cant be re-assigned
+// A 'const' cannot be reassigned.s
+dog = "Messi" 
 
-// Scope haves block scope
-
+// Scope has block scope.
 const scope = () => {
-
   const cat = "meow";
 }
 

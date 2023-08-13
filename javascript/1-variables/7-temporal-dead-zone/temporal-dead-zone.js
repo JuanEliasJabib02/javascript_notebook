@@ -5,7 +5,6 @@
 let perro;
 const gato = "super cat"
 /* 
-.
 . the temporal dead zone is all the block of code between was initializate the variable
 and when that variable take his first value in this cat "dante"
 .

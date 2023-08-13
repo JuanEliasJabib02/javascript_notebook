@@ -2,27 +2,22 @@
 /**
  *  What is the Scope ?:
  * 
- * The scope is the current context of execution in which values and expressions are "visibles".
- * 
- * If a variable or expression is not in the current scope it will no be available for use.
- *
+ * Scope is the current execution context in which values and expressions are "visible."
+ * If a variable or expression is not in the current scope, it will not be available for use.
  */
 
 /**
- * Javascript have 2 types of scope
+ * JavaScript has two types of scope.
  * 
  * Global Scope and Local Scope.
  */
 
-
-
 /**
  * Scope Global :
- *  Are the variables declarated outside of any function or blockcode
- *  and can be accesed from every place of our program
- *  
+ * These variables are declared outside of any function or block of code,
+ * and they can be accessed from any place in our program.
  */
-const variable = "im  in the global"
+const VARIABLE = "im  in the global"  // PD: hen a variable is in a global scope, it is common to name it in uppercase.
 
 /**
  * Local Scope :
@@ -85,8 +80,6 @@ only during the execution of the function or block
  * 
  Scope can be layered in a hierarchy, so that child scopes have access to his parent scope but not viseversa.
  */
-
-
 let fruit = "banana";
 function eat() {
   let fruit = "apple"

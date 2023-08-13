@@ -1,13 +1,11 @@
-// Can be initializate without a value
+// Can be initialized without a value.
 var pet;
 
-// Can be re-assigned
+// Can be reassigned.
 pet="Dieci"
 
 console.log(pet)
-// Var have a global scope
-
-
+// 'var' has global scope
 var text = "hi world";
 
 console.log(text)
