@@ -1,18 +1,16 @@
 
-
 /**
  * What is the  the hosting?
  *  
- * Is the process whereby functions declarations and variables are moved to the top
- * of the respectives scopes
+ * Hoisting is the process whereby function declarations and variables are moved to the top 
+ * of their respective scopes.
  */
 
 /**
  * Why happen the hoisting effect?
  * 
- * That happen because javascript engine do two phases , the first phase
- * is the compile phase and that is that first that occurs, in this phase
- * is when appears the hoisting effect and the second phase is the execution phase
+ * This happens because the JavaScript engine undergoes two phases. The first phase 
+ * is the compilation phase, which occurs first. In this phase, the hoisting effect becomes apparent. The second phase is the execution phase.
  */
 
 
