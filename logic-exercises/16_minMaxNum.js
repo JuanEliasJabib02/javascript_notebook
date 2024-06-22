@@ -1,6 +1,9 @@
 function miniMaxSum(arr) {
   // Write your code here
-  /* -1  */
+  /* -1 penultimate value in my array  */
+
+  /* First organize the array from minor to max number  */
+  arr.sort( (a,b) => a - b)
   const minSumArray = arr.slice(0, -1)
   const maxSumArray = arr.slice(1)
 
@@ -10,4 +13,4 @@ function miniMaxSum(arr) {
   return {minSum,maxSum}
 }
 
-console.log(miniMaxSum([1,2,3,4,5]))
+console.log(miniMaxSum([7,69,2,221,8974]))
